@@ -85,15 +85,16 @@
 <h2 class="section-title" style="text-align: center; border-left: none;">Contact Me</h2>
     <div class="contact-form-wrapper">
         <p class="contact-subtitle">Below are the details to reach out to me!</p>
-        <form action="#" class="contact-form">
-            <div class="input-group">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-            </div>
-            <textarea placeholder="Your Message" rows="6" required></textarea>
-            <div class="form-btn-container">
-                <button type="submit" class="btn-gold">SEND MESSAGE</button>
-            </div>
-        </form>
+        <form action="https://formspree.io/f/mjgkzdaa" method="POST" class="contact-form">
+    <div class="input-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+    <div class="form-btn-container">
+        <button type="submit" class="btn-gold">SEND MESSAGE</button>
+    </div>
+</form>
     </div>
 </section>
