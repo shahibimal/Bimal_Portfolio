@@ -133,12 +133,12 @@ body {
 }
 
 .image-circle {
-    width: 450px;
-    height: 450px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
-    border: 10px solid #ffcc00;
+    border: 8px solid #ffcc00;
     overflow: hidden;
-    box-shadow: 0 0 40px rgba(255, 204, 0, 0.2);
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.2);
 }
 
 .image-circle img {
