@@ -76,7 +76,7 @@ body {
 
 .greeting {
     color: #ffcc00;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -149,7 +149,7 @@ body {
 
 /* --- 6. PROJECTS GRID --- */
 .section-container {
-    padding: 100px 10%;
+    padding: 120px 10%;
 }
 
 .section-title {
@@ -244,7 +244,7 @@ body {
 
     /* 3. Center all Section Titles & Content */
     .section-container {
-        padding: 60px 5%;
+        padding: 80px 5%;
         text-align: center;
     }
 
