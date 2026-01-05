@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="5Qkw6yK9P4X-5qGcjABs9ZS7hl_D0pIpUbpairJGBy8" />
-    <title>Bimal Shahi | Data Analyst Portfolio</title>
-    
+    <title>Bimal Shahi | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Bimal <span class="gold-text">Shahi</span></div>
+            <div class="logo"><a href="#home">Bimal <span class="gold-text">Shahi</span></a></div>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -26,85 +23,77 @@
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-content">
-            <p class="gold-text uppercase tracking-widest">Hello!</p>
-            <h1>I'm <span class="gold-text">Bimal Shahi</span></h1>
-            <h2>Aspiring Data Analyst</h2>
-            <div class="hero-btns">
-                <a href="#projects" class="btn-gold">My Works</a>
-                <a href="#contact" class="btn-outline">Contact Me</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="greeting">HELLO!</p>
+                <h1>I'm <span class="gold-text">Bimal Shahi</span></h1>
+                <h2 class="sub-headline">Aspiring Data Analyst</h2>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-gold">My Works</a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <div class="image-circle">
-                 <span>BS</span> </div>
+            <div class="hero-image">
+                <div class="image-circle">
+                    <img src="profile.jpg" alt="Bimal Shahi">
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section-container bg-dark-soft">
+    <section id="about" class="section-container">
         <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>I am an 8th-semester Computer Engineering student from Nepal focusing on Data Analytics. I specialize in turning complex datasets into clear, actionable stories.</p>
-                <ul class="about-info">
-                    <li><span class="gold-text">Education:</span> BE in Computer Engineering</li>
-                    <li><span class="gold-text">Location:</span> Kathmandu, Nepal</li>
-                </ul>
-            </div>
-            <div class="skills-bars">
-                <div class="skill"><span>SQL</span><div class="bar"><div class="fill w-[85%]"></div></div></div>
-                <div class="skill"><span>Tableau</span><div class="bar"><div class="fill w-[75%]"></div></div></div>
-                <div class="skill"><span>MS Excel</span><div class="bar"><div class="fill w-[90%]"></div></div></div>
-            </div>
+        <p>I am an 8th-semester Computer Engineering student from Nepal focusing on Data Analytics...</p>
+    </section>
+    <section id="resume" class="section-container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+            <p>Download my full CV to see my technical background and experience in detail.</p>
+            <br>
+            <a href="#" class="btn-gold">Download CV</a>
         </div>
     </section>
 
-    <section id="projects" class="section-container">
-        <h2 class="section-title">Projects</h2>
+    <section id="projects" class="section-container bg-dark-soft">
+        <h2 class="section-title">My Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-icon">📊</div>
-                <h3>Sales Report Analysis</h3>
-                <p>Advanced Excel Pivot Tables for revenue tracking.</p>
+                <h3>Sales Dashboard</h3>
+                <p>Interactive Power BI dashboard for tracking monthly revenue and performance.</p>
+                <a href="#" class="gold-text">View Project →</a>
             </div>
+
             <div class="project-card">
-                <div class="project-icon">🗄️</div>
-                <h3>SQL E-commerce Analysis</h3>
-                <p>Cleaning and joining data to identify customer behavior.</p>
+                <div class="project-icon">🛒</div>
+                <h3>E-commerce Analysis</h3>
+                <p>SQL-based analysis of customer behavior and product trends.</p>
+                <a href="#" class="gold-text">View Project →</a>
             </div>
+
             <div class="project-card">
-                <div class="project-icon">📉</div>
-                <h3>Tableau Dashboard</h3>
-                <p>Live visualization of global weather trends.</p>
+                <div class="project-icon">💻</div>
+                <h3>Personal Portfolio</h3>
+                <p>Modern responsive portfolio built with HTML and CSS.</p>
+                <a href="#" class="gold-text">View Project →</a>
             </div>
         </div>
     </section>
+    </section>
 
-    <section id="contact" class="max-w-6xl mx-auto py-24 px-6">
-    <div class="text-center mb-16">
-        <h2 class="text-5xl font-extrabold mb-4 uppercase tracking-tighter">Contact <span class="gold-text">Me</span></h2>
-        <p class="text-gray-400">Below are the details to reach out to me!</p>
+<section id="contact" class="section-container">
+<h2 class="section-title" style="text-align: center; border-left: none;">Contact Me</h2>
+    <div class="contact-form-wrapper">
+        <p class="contact-subtitle">Below are the details to reach out to me!</p>
+        <form action="#" class="contact-form">
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <div class="form-btn-container">
+                <button type="submit" class="btn-gold">SEND MESSAGE</button>
+            </div>
+        </form>
     </div>
-
-    <form action="/api/contact" method="POST" class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
-            <input type="text" name="name" placeholder="Your Name" required 
-                class="w-full bg-[#111] p-5 rounded-xl border border-zinc-800 focus:border-[#ffcc00] focus:outline-none transition-all text-white placeholder-zinc-500">
-            
-            <input type="email" name="email" placeholder="Your Email" required 
-                class="w-full bg-[#111] p-5 rounded-xl border border-zinc-800 focus:border-[#ffcc00] focus:outline-none transition-all text-white placeholder-zinc-500">
-        </div>
-        
-        <textarea name="message" placeholder="Your Message" rows="6" required 
-            class="w-full bg-[#111] p-5 rounded-xl border border-zinc-800 focus:border-[#ffcc00] focus:outline-none transition-all text-white placeholder-zinc-500 mb-8"></textarea>
-        
-        <div class="text-center">
-            <button type="submit" class="bg-[#ffcc00] text-black font-black uppercase py-4 px-12 rounded-full hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20">
-                Send Message
-            </button>
-        </div>
-    </form>
 </section>
-
-</body>
-</html>
