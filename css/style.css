@@ -212,3 +212,61 @@ body {
     width: fit-content;
     align-self: center;
 }
+/* --- 8. MOBILE RESPONSIVE FIXES --- */
+@media (max-width: 768px) {
+    /* 1. Fix Hero Section (Stack image on top of text) */
+    .hero-container {
+        flex-direction: column-reverse; /* Put image on top, text below */
+        text-align: center;
+        gap: 30px;
+        padding-top: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem; /* Smaller font so it fits on phone screens */
+    }
+
+    .image-circle {
+        width: 280px;  /* Smaller circle for mobile */
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    /* 2. Fix Navbar (Make it simpler for touch) */
+    .navbar {
+        padding: 1rem 5%;
+    }
+
+    .nav-links {
+        display: none; /* Usually, we hide these or make a burger menu, 
+                          but for now, this prevents overlapping. */
+    }
+
+    /* 3. Center all Section Titles & Content */
+    .section-container {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* 4. Fix Contact Form (Stack Name and Email) */
+    .input-group {
+        flex-direction: column; /* Stack the inputs vertically */
+        gap: 15px;
+    }
+
+    /* 5. Fix Buttons */
+    .hero-btns {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-gold, .btn-outline {
+        width: 100%; /* Make buttons full width on mobile */
+        max-width: 300px;
+    }
+}
