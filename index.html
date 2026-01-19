@@ -4,102 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bimal Shahi | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-     <!-- (--
-➡️ Imports Poppins font
-➡️ Makes website modern and professional
-) -->
 </head>
 <body>
+    <div class="mesh-bg"></div>
 
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo"><a href="#home"><span class="gold-text">Bimal Shahi</span></a></div>  
+            <div class="logo">BIMAL<span class="highlight"> SHAHI</span></div>
             <div class="nav-links">
-                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#resume">Resume</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#work">Work</a>
+                <a href="#contact" class="nav-cta">Say Hello</a>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="greeting">HELLO!</p>
-                <h1><span class="gold-text">I'm Bimal Shahi</span></h1>
-                <h2 class="sub-headline">Aspiring Data Analyst</h2>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn-gold">My Works</a>
-                    <a href="#contact" class="btn-outline">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-circle">
-                    <img src="profile.jpg" alt="Bimal Shahi">
-                </div>
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Making Data <br><span class="highlight">Visual.</span></h1>
+            <p class="sub-headline">I'm Bimal Shahi. I specialize in engineering clean data pipelines and turning complex numbers into intuitive narratives.</p>
+            <div class="hero-btns">
+                <a href="#work" class="submit-btn" style="text-decoration:none">View Projects</a>
             </div>
         </div>
-    </header>
-
-    <section id="about" class="section-container">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-        <p>Hi! I’m <strong>Bimal Shahi</strong>, a Computer Engineering student and Aspiring Data Analyst. I’m passionate about bridging the gap between complex data engineering and visual storytelling.</p>
-        
-        <p>With a strong foundation in <strong>SQL, Tableau, and Excel</strong>, I enjoy transforming raw datasets into interactive dashboards that uncover hidden trends. My engineering background helps me approach data with a logical, problem-solving mindset—whether it’s writing optimized CTEs or designing visualizations.</p>
-        
-        <p>I’m a lifelong learner, currently building a portfolio of projects that demonstrate how data-driven insights can solve real-world problems.</p>
+        <div class="image-wrapper">
+            <img src="profile.jpg" alt="Bimal Shahi">
         </div>
-</section>
+    </main>
 
-<section id="resume" class="section-container">
-    <h2 class="section-title">Resume</h2>
-    <div style="text-align: center;">
-        <p>I am currently an 8th-semester student. Download my full CV for more details.</p>
-        <br>
-        <a href="Bimal_Shahi_Resume.pdf" download class="btn-gold">Download CV</a>
-    </div>
-</section>
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div class="about-card bio">
+                <span class="highlight">// THE ARCHITECT</span>
+                <h2>Bridging Engineering & Insights</h2>
+                <p>I’m <strong>Bimal Shahi</strong>, a Computer Engineering student and Aspiring Data Analyst. I bridge the gap between complex engineering and visual storytelling, turning raw data into strategic narratives. With a focus on <span class="highlight"><strong>SQL, Tableau, and Excel</strong></span>, I build logical, high-performance solutions to solve real-world problems.</p>
+            </div>
 
-    <section id="projects" class="section-container bg-dark-soft">
-    <h2 class="section-title">My Projects</h2>
-    <div class="projects-grid">
-        
-        <div class="project-card">
-            <div class="project-icon">🔍</div>
-            <h3>covid-19-data-exploration</h3>
-            <p>A complete data study including SQL data exploration, cleaning global datasets, and final Tableau visualization.</p>
-            <a href="https://github.com/shahibimal/covid19-data-exploration" target="_blank" class="gold-text">View Full Project →</a>
+            <div class="about-card tech-stack">
+                <h3>Core Expertise</h3>
+                <div class="skills-container">
+                    <div class="skill-tag">SQL (CTEs & Joins)</div>
+                    <div class="skill-tag">Tableau Visualization</div>
+                    <div class="skill-tag">Excel Automation</div>
+                    <div class="skill-tag">Data Engineering</div>
+                    <div class="skill-tag">Problem Solving</div>
+                    <div class="skill-tag">Python (Pandas)</div>
+                </div>
+                <div class="learning-status">
+                    <p>🚀 Currently building real-world data solutions.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <div class="project-icon">📊</div>
-            <h3>COVID-19 Dashboard</h3>
-            <p>An interactive Tableau dashboard created from the COVID-19 dataset to visualize global trends and infection rates.</p>
-            <a href="https://github.com/bimalshahi/Covid-19-Data-Exploration" target="_blank" class="gold-text">View Dashboard →</a>
+<section id="resume" class="resume-section">
+    <div class="resume-container">
+        <div class="resume-text">
+            <span class="highlight">// CAREER PATH</span>
+            <h2>Ready to see the full picture?</h2>
+            <p>Download my comprehensive resume to explore my academic background, technical certifications, and the full scope of my engineering expertise.</p>
         </div>
-
+        <div class="resume-action">
+            <a href="Bimal_Shahi_Resume.pdf.pdf" download class="download-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </div>
+                <span>Download CV</span>
+            </a>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="section-container">
-<h2 class="section-title" style="text-align: center; border-left: none;">Contact Me</h2>
-    <div class="contact-form-wrapper">
-        <p class="contact-subtitle">Below are the details to reach out to me!</p>
-        <form action="https://formspree.io/f/mjgkzdaa" method="POST" class="contact-form">
-    <div class="input-group">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-    </div>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    
-    <div class="form-btn-container">
-        <button type="submit" class="btn-gold">SEND MESSAGE</button>
-    </div>
-</form>
-    </div>
-</section>
+    <section id="work" style="padding: 100px 10%;">
+        <h2 style="font-size: 3rem; margin-bottom: 40px; letter-spacing: -2px;">My Projects</h2>
+        <div class="projects-grid">
+            <div class="p-card">
+                <p style="color:var(--primary); font-weight: 800;">[01]</p>
+                <h3>Global Health Insights</h3>
+                <p style="color:var(--text-dim)">Exploratory Data Analysis on COVID-19 trends using SQL.</p>
+            </div>
+            <div class="p-card">
+                <p style="color:var(--primary); font-weight: 800;">[02]</p>
+                <h3>The SQL Auditor</h3>
+                <p style="color:var(--text-dim)">A performance-focused script for database optimization.</p>
+            </div>
+            <div class="p-card">
+                <p style="color:var(--primary); font-weight: 800;">[03]</p>
+                <h3>Executive Dashboard</h3>
+                <p style="color:var(--text-dim)">Financial storytelling through interactive Tableau viz.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Have a <br>Project?</h2>
+                <p style="margin-top:20px; color:var(--text-dim)">Let's discuss how data can drive your business forward.</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Tell me about your data goals" rows="4" required></textarea>
+                <button class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
