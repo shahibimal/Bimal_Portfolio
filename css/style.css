@@ -80,7 +80,8 @@ body {
 
 /* --- IMAGE: STYLIZED FRAME --- */
 .image-wrapper {
-    position: relative; border-radius: 40px; overflow: hidden;
+    position: relative; border-radius: 40px; overflow: hidden; width:100%;
+max-width: 320px;
     transform: rotate(3deg); transition: 0.5s ease;
 }
 
@@ -255,4 +256,75 @@ body {
     .hero, .contact-container { grid-template-columns: 1fr; }
     .hero-content h1 { font-size: 3rem; }
 
+}
+
+/* --- COMPREHENSIVE MOBILE FIXES --- */
+@media (max-width: 768px) {
+    /* 1. Navbar: Simplify for small screens */
+    .navbar {
+        width: 95%;
+        padding: 0.8rem 1rem;
+    }
+    .nav-links a:not(.nav-cta) {
+        display: none; /* Hides menu links to avoid crowding, keeps 'Say Hello' */
+    }
+
+    /* 2. Hero: Stack Image on Top */
+    .hero {
+        padding: 120px 5% 50px;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+        letter-spacing: -2px;
+    }
+    .sub-headline {
+        border-left: none;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+    .image-wrapper {
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    /* 3. About Section: Stack the Cards */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-card {
+        padding: 30px 20px;
+    }
+    .about-card h2 {
+        font-size: 2rem;
+    }
+
+    /* 4. Resume Section: Stack Text and Button */
+    .resume-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .resume-text h2 {
+        font-size: 1.8rem;
+    }
+
+    /* 5. Projects: Stack Bento Box to 1 Column */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 6. Contact: Stack Form & Fix Inputs */
+    .contact-container {
+        padding: 30px 20px;
+        grid-template-columns: 1fr;
+    }
+    .form-row {
+        grid-template-columns: 1fr; /* Name and Email stack on phone */
+    }
+    .contact-info h2 {
+        font-size: 2.2rem;
+    }
 }
