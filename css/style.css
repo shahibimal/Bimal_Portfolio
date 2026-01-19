@@ -86,7 +86,7 @@ body {
 
 .image-wrapper:hover { transform: rotate(0deg) scale(1.05); }
 
-.image-wrapper img { width: 100%; border-radius: 40px; }
+.image-wrapper img { width: 90%; border-radius: 40px; }
 
 /* --- ABOUT SECTION --- */
 .about-section {
@@ -254,4 +254,5 @@ body {
 @media (max-width: 968px) {
     .hero, .contact-container { grid-template-columns: 1fr; }
     .hero-content h1 { font-size: 3rem; }
+
 }
