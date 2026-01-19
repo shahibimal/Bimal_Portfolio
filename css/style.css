@@ -1,3 +1,4 @@
+
 :root {
     --primary: #6366f1; /* Indigo */
     --secondary: #0ea5e9; /* Sky Blue */
@@ -81,7 +82,7 @@ body {
 /* --- IMAGE: STYLIZED FRAME --- */
 .image-wrapper {
     position: relative; border-radius: 40px; overflow: hidden; width:100%;
-max-width: 320px;
+max-width: 300px;
     transform: rotate(3deg); transition: 0.5s ease;
 }
 
@@ -327,4 +328,39 @@ max-width: 320px;
     .contact-info h2 {
         font-size: 2.2rem;
     }
+    
+}
+
+/* --- LIGHT MODE THEME OVERRIDES (OUTSIDE THE MEDIA QUERY) --- */
+body.light-mode {
+    --bg-deep: #f1f5f9;      /* Changed to a soft "Slate Grey" */
+    --bg-card: #ffffff;      /* Keep cards pure white so they "float" on the grey */
+    --text-main: #1e293b;    /* Dark slate blue (softer than black) */
+    --text-dim: #475569;     /* Dimmer slate */
+    --glass-border: rgba(0, 0, 0, 0.08);
+
+}
+
+body.light-mode .mesh-bg {
+    opacity: 0.3; 
+}
+
+body.light-mode .download-card, 
+body.light-mode .submit-btn,
+body.light-mode .nav-cta {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+body.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0,0,0,0.1);
+}
+
+body.light-mode .p-card, 
+body.light-mode .about-card,
+body.light-mode .contact-container {
+    background: #f8fafc;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }

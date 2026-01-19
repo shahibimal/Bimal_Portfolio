@@ -68,7 +68,7 @@
             <p>Download my comprehensive resume to explore my academic background, technical certifications, and the full scope of my engineering expertise.</p>
         </div>
         <div class="resume-action">
-            <a href="https://bit.ly/4sNSf1N" download class="download-card">
+            <a href="Bimal_Shahi_Resume.pdf" download class="download-card">
                 <div class="icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 </div>
@@ -116,12 +116,38 @@
             </form>
         </div>
     </section>
-    <footer>© 2026 Bimal Shahi</footer>
+    <footer>© 2026 Bimal Shahi | Aspiring Data Analyst </footer>
 </main>
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-</body>
-</html
 
+<button id="theme-toggle" style="position: fixed; top: 100px; right: 20px; z-index: 2000; padding: 10px; border-radius: 50%; cursor: pointer; border: 2px solid var(--primary); background: var(--bg-card);">
+        <span id="theme-icon">☀️</span>
+    </button>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                themeIcon.innerText = '🌙'; 
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.innerText = '☀️'; 
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeIcon.innerText = '🌙';
+        }
+
+        // Vercel Analytics
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
